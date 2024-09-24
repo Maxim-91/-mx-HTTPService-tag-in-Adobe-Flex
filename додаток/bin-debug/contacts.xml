@@ -1,0 +1,25 @@
+<contacty>
+ <contacts nomer="1">
+  <firstName>Віка</firstName>
+  <lastName>Зимовець</lastName>
+  <email>vikvik@mail.ru</email>
+  <phone>0630000000</phone>
+  <adress>Konotop</adress>
+ </contacts>
+ 
+ <contacts nomer="2">
+  <firstName>Петя</firstName>
+  <lastName>Вася</lastName>
+  <email>pv@mail.ru</email>
+  <phone>0631111111</phone>
+  <adress>Konotop</adress>
+ </contacts>
+ 
+ <contacts nomer="3">
+  <firstName>Макс</firstName>
+  <lastName>Котлубаєв</lastName>
+  <email>makc@mail.ru</email>
+  <phone>0670000000</phone>
+  <adress>Konotop</adress>
+ </contacts>
+</contacty>

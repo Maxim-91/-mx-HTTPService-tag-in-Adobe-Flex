@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application applicationComplete="contactsService.send()" xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="664">
+	<mx:DataGrid id="DataGrid1" x="10" y="10" dataProvider="{contactsService.lastResult.contacts}">
+		<mx:columns>
+			<mx:DataGridColumn headerText="nomer" dataField="@nomer"/>
+			<mx:DataGridColumn headerText="firstName" dataField="firstName"/>
+			<mx:DataGridColumn headerText="lastName" dataField="lastName"/>
+			<mx:DataGridColumn headerText="email" dataField="email"/>
+			<mx:DataGridColumn headerText="phone" dataField="phone"/>
+			<mx:DataGridColumn headerText="adress" dataField="adress"/>
+		</mx:columns>
+	</mx:DataGrid>
+	<mx:HTTPService id="contactsService" resultFormat="e4x" url="contacts.xml"/>
+</mx:Application>

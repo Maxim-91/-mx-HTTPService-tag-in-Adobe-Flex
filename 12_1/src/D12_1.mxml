@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application applicationComplete="contactsService.send()" xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="1146">
+	
+	<mx:DataGrid id="DataGrid2" x="10" y="10" dataProvider="{contactsService.lastResult.contact}">
+		<mx:columns>
+			<mx:DataGridColumn headerText="id" dataField="@id"/>
+			<mx:DataGridColumn headerText="firstName" dataField="firstName"/>
+			<mx:DataGridColumn headerText="lastName" dataField="lastName"/>
+			<mx:DataGridColumn headerText="email" dataField="email"/>
+			<mx:DataGridColumn headerText="phone" dataField="phone"/>
+			<mx:DataGridColumn headerText="phoneType" dataField="phoneType"/>			
+			<mx:DataGridColumn headerText="address" dataField="address"/>
+			<mx:DataGridColumn headerText="zip" dataField="zip"/>
+			<mx:DataGridColumn headerText="birthday" dataField="birthday"/>
+			<mx:DataGridColumn headerText="color" dataField="color"/>
+			<mx:DataGridColumn headerText="company" dataField="company"/>			
+		</mx:columns>
+	</mx:DataGrid>
+	<mx:HTTPService id="contactsService" resultFormat="e4x" url="http://www.greenlike.com/flex/learning/projects/contactmanager/contacts.xml">
+	</mx:HTTPService>
+</mx:Application>
+	
